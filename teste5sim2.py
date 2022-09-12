@@ -10,11 +10,10 @@ y = np.ravel(arquivo[1])
 arquivo = open("Teste5-Sim2/log.txt",'w')
 arquivo.close()
 
-#Usando o teste de arquitetura qtdd
 for j in range(0, 10):
 
-    regr = MLPRegressor(hidden_layer_sizes=(2000, 800), 
-                        max_iter=10000,
+    regr = MLPRegressor(hidden_layer_sizes=(200, 800), 
+                        max_iter=20000,
                         activation='tanh', #{'identity', 'logistic', 'tanh', 'relu'} - tipo do grafico
                         solver='adam',
                         learning_rate = 'adaptive',
