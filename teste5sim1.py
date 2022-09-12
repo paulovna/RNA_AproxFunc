@@ -13,8 +13,8 @@ arquivo.close()
 #Usando o teste de arquitetura camadas
 for j in range(0, 10):
 
-    regr = MLPRegressor(hidden_layer_sizes=(700,700),  # Quantidade de neuronios
-                        max_iter=15000, # Quantas vezes os neuronios vão se conectar
+    regr = MLPRegressor(hidden_layer_sizes=(1000,150),  # Quantidade de neuronios
+                        max_iter=200000, # Quantas vezes os neuronios vão se conectar
                         activation='tanh', #{'identity', 'logistic', 'tanh', 'relu'} - tipo do grafico
                         solver='adam',
                         learning_rate = 'adaptive',
