@@ -10,7 +10,7 @@ y = np.ravel(arquivo[1])
 arquivo = open("Teste4-Sim1/log.txt",'w')
 arquivo.close()
 
-#Usando o teste de arquitetura camadas
+#Usando o teste de arquitetura iterações
 for j in range(0, 10):
 
     regr = MLPRegressor(hidden_layer_sizes=(700,700),  # Quantidade de neuronios
