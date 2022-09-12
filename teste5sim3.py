@@ -13,8 +13,8 @@ arquivo.close()
 #Usando o teste de arquitetura neuronios
 for j in range(0, 10):
 
-    regr = MLPRegressor(hidden_layer_sizes=(700, 3000), 
-                        max_iter=10000,
+    regr = MLPRegressor(hidden_layer_sizes=(2000, 200), 
+                        max_iter=20000,
                         activation='logistic', #{'identity', 'logistic', 'tanh', 'relu'} - tipo do grafico
                         solver='adam',
                         learning_rate = 'adaptive',
